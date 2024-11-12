@@ -54,12 +54,12 @@
     background: #9F9FED;
 }
 #Comunicacao{
-    background-image: url("../img/Comunicação.jpg");
+    background-image: url("../img/Pessoas\ Conversando.jpeg");
     background-size: cover;
     background-position: center;
 }
 #Estudos{
-    background-image: url("../img/Estudando.jpeg");
+    background-image: url("../img/PessoaEstudando.webp");
     background-size: cover;
     background-position: center;
 }
@@ -69,7 +69,7 @@
     background-position: center;
 }
 #FrontEnd{
-    background-image: url("../img/Front\ End.jpg");
+    background-image: url("../img/FrontEnd_cod.webp");
     background-size: cover;
     background-position: center;
 }
