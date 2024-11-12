@@ -54,32 +54,32 @@
     background: #9F9FED;
 }
 #Comunicacao{
-    background-image: url(/img/Pessoas\ Conversando.jpeg);
+    background-image: url(../img/Comunicação.jpg);
     background-size: cover;
     background-position: center;
 }
 #Estudos{
-    background-image: url(/img/PessoaEstudando.webp);
+    background-image: url(../img/Estudando.jpeg);
     background-size: cover;
     background-position: center;
 }
 #BeC{
-    background-image: url(/img/Calmaria.jpg);
+    background-image: url(../img/Calmaria.jpg);
     background-size: cover;
     background-position: center;
 }
 #FrontEnd{
-    background-image: url(/img/FrontEnd_cod.webp);
+    background-image: url(../img/Front\ End.jpg);
     background-size: cover;
     background-position: center;
 }
 #BackEnd{
-    background-image: url(/img/BackEnd_cod.jpg);
+    background-image: url(../img/BackEnd_cod.jpg);
     background-size: cover;
     background-position: center;
 }
 #BancoDados{
-    background-image: url(/img/Banco\ De\ Dados_Code.png);
+    background-image: url(../img/Banco\ De\ Dados_Code.png);
     background-size: contain;
     background-position: right;
 }
@@ -234,17 +234,17 @@ dialog > button{
     font-size: 20px;
 }
 #SeloIndicacao{
-    background-image: url(/img/Selo\ de\ Entidade.png);
+    background-image: url(../img/Selo\ de\ Entidade.png);
     background-size: cover;
     background-position: center;
 }
 #Pokedex{
-    background-image: url(/img/Pokedex.png);
+    background-image: url(../img/Pokedex.png);
     background-size: cover;
     background-position: center;
 }
 #Cobra{
-    background-image: url(/img/Jogo\ Snake.png);
+    background-image: url(../img/Jogo\ Snake.png);
     background-size: cover;
     background-position: center;
 }
