@@ -1,0 +1,210 @@
+#Pefil{
+    border-radius: 75%;
+    height: 25vw;
+    width: 25vw;
+    position: relative;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10vw;
+}
+#ImgBack{
+    position: absolute;
+    opacity: 0.25;
+    height: 500px;
+    right: 45%;
+}
+.Texto{
+    text-align: start;
+    font-size: 2vw;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.icon{
+    color: #000;
+    font-size: 3rem;
+}
+.Desc{
+    padding-bottom: 90px;
+    color: #000;
+    transform: scale(0);
+    font-size: 18px;
+    transition: .3s;
+    transition-delay: .2s;
+}
+ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    padding-top: 20px;
+    gap: 5vw;
+}
+ul li{
+    width: 80px;
+    height: 80px;
+
+    background-color: #9F9FED;
+    box-shadow: 0 6px 20px #F2DFD7;
+
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    transition: .2s;
+}
+ul li span{
+    position: absolute;
+}
+ul li:hover{
+    background-color: #F2DFD7;
+}
+ul li:hover .Desc{
+    transform: scale(1);
+}
+#Empregos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding-top: 25px;
+}
+.Emprego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 400px;
+    background: #9F9FED;
+    border-radius: 35px;
+    gap: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#FarmaciaInfor{
+    position: relative;
+    padding: 5px 20px;
+    background: #736CED;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 1px 5px #000;
+}
+#FarmaciaInfor:active{
+    transform: scale(0.9);
+}
+#FarmaciaInfor::before,
+#FarmaciaInfor::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 150%;
+    background-repeat: no-repeat;
+}
+#FarmaciaInfor.animate::before{
+    top: -70%;
+    background-image: radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle, transparent 20%,#736CED 20%,transparent 30%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle, transparent 10%,#736CED 15%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%);
+    background-size: 1rem 1rem, 2rem 2rem, 1.5rem 2rem,2rem 2rem,1.8rem 1.8rem, 1rem 1rem,1.5rem 1.5rem, 1.8rem 1.8rem;
+    background-position: 5% 90%, 10% 90%,10% 90%, 15% 90%, 25% 90%,25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    animation:topBubbles1 0.6s  ease-in-out forwards;
+}
+@keyframes topBubbles1 {
+    50%{
+        background-position: 0% 80%, 0% 20%,10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100%{
+        background-position: 0% 70%, 0% 10%,10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%,0% 0%,0% 0%, 0% 0%;
+    }
+}
+#FarmaciaInfor.animate::after{
+    bottom: -70%;
+    background-image: radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle, transparent 10%,#736CED 15%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%);
+    background-size: 1.5rem 1.5rem, 2rem 2rem, 1.8rem 1.8rem,2rem 2rem,1.5rem 1.5rem, 2rem 2rem, 1.8rem 1.8rem;
+    background-position: 10% 0%, 30% 10%,55% 0%, 70% 0%, 85% 0%,70% 0%, 70% 0%;
+    animation:bottomBubbles1 0.6s  ease-in-out forwards;
+}
+@keyframes bottomBubbles1 {
+    50%{
+        background-position: 0% 80%, 20% 80%,45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100%{
+        background-position: 0% 90%, 20% 90%,45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%,0% 0%,0% 0%, 0% 0%;
+    }
+}
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+}
+.Infor{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 450px;
+    border: none;
+    border-radius: 75px;
+    background: #9F9FED;
+}
+.Infor img{
+    width: 450px;
+    height: 400px;
+    margin-top: 24px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+.Infor div{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.Infor div p{
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 35px;
+    font-size: 30px;
+}
+dialog > button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+dialog > button:active{
+    color: #000;
+}

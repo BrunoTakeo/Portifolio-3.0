@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Takeo Açano</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/Header.css">
+    <link rel="stylesheet" href="./Css/Main_1.css">
+    <link rel="stylesheet" href="./Css/Main_2.css">
+    <link rel="stylesheet" href="./Css/Footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <img src="./img/BTA.png" id="Icon">
+        <div class="Barra">
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#Servicos">Serviços</a>
+                <a href="#Habilidades">Habilidades</a>
+                <a href="#Projetos">Atividades</a>
+                <a href="#Contato">Contato</a>
+                <span></span>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="Home">
+            <div class="Texto">
+                <h1><em>Olá, meu nome é Bruno Takeo Açano.</em></h1>
+                <br><br>
+                <p>Sou estudante do Instituto Federal de São Paulo (IFSP), campus Birigui, e tenho como objetivo adquirir mais conhecimentos em programação, tanto na área de Front-End quanto na de Back-End.</p>
+            </div>
+            <img src="./img/Duas Casas Japonesas.png" id="ImgBack">
+            <div id="Social">
+                <img src="./img/Perfil.jpeg" id="Pefil">
+                <ul>
+                    <a href="https://www.linkedin.com/in/bruno-takeo-a%C3%A7ano-0bbb41273/" id="Linkedin">
+                        <li>
+                            <span class="icon"><i class="bi bi-linkedin"></i></span>
+                            <span class="Desc">Linkedin</span>
+                        </li>
+                    </a>
+                    <a href="https://github.com/BrunoTakeo" id="Github">
+                        <li>
+                            <span class="icon"><i class="bi bi-github"></i></span>
+                            <span class="Desc">Github</span>
+                        </li>
+                    </a>
+                    <a href="#Contato" id="Email">
+                        <li>
+                            <span class="icon"><i class="bi bi-envelope"></i></span>
+                            <span class="Desc">brunotakeo14@gmail.com</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="Servicos">
+            <h2><u>Serviços</u></h2>
+            <div id="Empregos">
+                <span class="Emprego">
+                    <img src="./img/Farmaville.png" id="Farmacia">
+                    <p>Atualmente, trabalho em uma farmácia em Birigui chamada Farmaville.<br>Minhas responsabilidades incluem o cadastro...</p>
+                    <button id="FarmaciaInfor">Saiba Mais</button>
+                    <dialog class="Infor">
+                        <button>X</button>
+                        <div>
+                            <p>Atualmente, trabalho em uma farmácia em Birigui chamada Farmaville. Minhas responsabilidades incluem o cadastro de produtos farmacêuticos, ajuste de preços e a preparação de documentação técnica e regulatória para submissão aos órgãos de controle.
+                            </p>
+                            <img src="./img/Farmacia.jpg">
+                        </div>
+                    </dialog>
+                </span>
+            </div>
+        </div>
+        <div id="Habilidades">
+            <div id="Soft">
+                <h2><em>Soft Skills</em></h2>
+                <a onclick="Action('Comunicacao')" class="Habilidade">
+                    <span><img src="./img/Comunicação.jpg" class="ImgHabilidade"></span>
+                    <p><strong>Otima Comunicação Com As Pessoas</strong></p>
+                </a>
+                <dialog class="InforHab" id="Comunicacao">
+                    <button onclick="Back('Comunicacao')">X</button>
+                    <div>
+                        <p>
+                        Possuo uma comunicação satisfatória e facilidade para fazer novas amizades. Sempre que possível, entro em contato para esclarecer dúvidas.                        
+                        </p>
+                    </div>
+                </dialog>
+                <a onclick="Action('Estudos')" class="Habilidade">
+                    <span><img src="./img/Estudando.jpeg" class="ImgHabilidade"></span>
+                    <p><strong>Dedicação Aos Estudo e Aprendizagem</strong></p>
+                </a>
+                <dialog class="InforHab" id="Estudos">
+                    <button onclick="Back('Estudos')">X</button>
+                    <div>
+                        <p>
+                            Tenho grande foco e dedicação, o que me permite executar tarefas de forma caprichada e organizada. Essa característica se destaca como uma habilidade essencial para mim, tanto em serviços quanto nos estudos.
+                        </p>
+                    </div>
+                </dialog>
+                <a onclick="Action('BeC')" class="Habilidade">
+                    <span><img src="./img/Bondoso E Calmo.jpeg" class="ImgHabilidade"></span>
+                    <p><strong>Uma Mente Calma e Bondosa</strong></p>
+                </a>
+                <dialog class="InforHab" id="BeC">
+                    <button onclick="Back('BeC')">X</button>
+                    <div>
+                        <p>
+                            Sempre mantenho uma personalidade calma e gentil com as pessoas ao meu redor, sejam amigos ou colegas de equipe.
+                            <br>
+                            Sempre que cometo algum erro, prontamente peço desculpas pelo ocorrido.
+                        </p>
+                    </div>
+                </dialog>
+            </div>
+            <div id="Hard">
+                <h2><em>Hard Skills</em></h2>
+                <a onclick="Action('FrontEnd')" class="Habilidade">
+                    <span><img src="./img/Front End.jpg" class="ImgHabilidade"></span>
+                    <p><strong>Front End</strong></p>
+                </a>
+                <dialog class="InforHab" id="FrontEnd">
+                    <button onclick="Back('FrontEnd')">X</button>
+                    <div>
+                        <p>
+                            Possuo conhecimentos em:
+                        </p>
+                        <li>
+                            HTML (Moderado)
+                        </li>
+                        <li>
+                            CSS (Moderado)
+                        </li>
+                        <li>
+                            JavaScript (Basico)
+                        </li>
+                    </div>
+                </dialog>
+                <a onclick="Action('BackEnd')" class="Habilidade">
+                    <span><img src="./img/Back End.png" class="ImgHabilidade"></span>
+                    <p><strong>Back End</strong></p>
+                </a>
+                <dialog class="InforHab" id="BackEnd">
+                    <button onclick="Back('BackEnd')">X</button>
+                    <div>
+                        <p>
+                            Possuo conhecimentos em:
+                        </p>
+                        <li>
+                            C++ (Moderado)
+                        </li>
+                        <li>
+                            C# (Moderado)
+                        </li>
+                        <li>
+                            PHP(Basico)
+                        </li>
+                        <li>
+                            JAVA(Basico)
+                        </li>
+                    </div>
+                </dialog>
+                <a onclick="Action('BancoDados')" class="Habilidade">
+                    <span><img src="./img/Banco De Dados.png" class="ImgHabilidade"></span>
+                    <p><strong>Banco De Dados</strong></p>
+                </a>
+                <dialog class="InforHab" id="BancoDados">
+                    <button onclick="Back('BancoDados')">X</button>
+                    <div>
+                        <p>Possuo conhecimentos em:</p>
+                        <li>
+                            MySQL (Moderado)
+                        </li>
+                        <li>
+                            OracleSQL (Basico)
+                        </li>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+        <div id="Projetos">
+            <h1>Atividades práticas</h1>
+            <div id="Trabalhos">
+                <span class="Trabalho">
+                    <img src="./img/Selo de Entidade.png">
+                    <h3>Selo Indicação de Procedencia</h3>
+                    <button onclick="Action('SeloIndicacao')" class="Trabalho_Infor">Saiba Mais</button>
+                    <dialog class="InforProjeto" id="SeloIndicacao">
+                        <button onclick="Back('SeloIndicacao')">X</button>
+                        <div>
+                            <p>
+                            Este foi um projeto que eu, junto com duas colegas de classe, desenvolvemos para um trabalho escolar. Trata-se de um site com o objetivo de explicar sobre o selo de Indicação Geográfica e apresentar um pouco da história de Birigui em relação à produção de calçados.            
+                            </p>
+                            <a class="Linguagens">
+                                <li class="HTML">
+                                    <span class="icon"><i class="bi bi-filetype-html"></i></span>
+                                </li>
+                                <li class="CSS">
+                                    <span class="icon"><i class="bi bi-filetype-css"></i></span>
+                                </li>
+                                <li class="JS">
+                                    <span class="icon"><i class="bi bi-filetype-js"></i></span>
+                                </li>
+                            </a>
+                            <a href="https://brunotakeo.github.io/Site-para-Selo-de-Proced-ncia/Site-IP/">Ir Ao Site</a>
+                        </div>
+                    </dialog>
+                </span>
+                <span class="Trabalho">
+                    <img src="./img/Pokedex.png">
+                    <h3>Pokedex Vitual</h3>
+                    <button onclick="Action('Pokedex')" class="Trabalho_Infor">Saiba Mais</button>
+                    <dialog class="InforProjeto" id="Pokedex">
+                        <button onclick="Back('Pokedex')">X</button>
+                        <div>
+                            <p>
+                                Um projeto que utiliza uma API chamada PokeAPI. Neste projeto, criei uma Pokédex simples que exibe informações sobre o Pokémon quando você insere o nome ou o número e clica no botão.
+                            </p>
+                            <a class="Linguagens">
+                                <li class="HTML">
+                                    <span class="icon"><i class="bi bi-filetype-html"></i></span>
+                                </li>
+                                <li class="CSS">
+                                    <span class="icon"><i class="bi bi-filetype-css"></i></span>
+                                </li>
+                                <li class="JS">
+                                    <span class="icon"><i class="bi bi-filetype-js"></i></span>
+                                </li>
+                            </a>
+                            <a href="https://brunotakeo.github.io/Pokedex-Estudo/">Ir Ao Site</a>
+                        </div>
+                    </dialog>
+                </span>
+                <span class="Trabalho">
+                    <img src="./img/Jogo Snake.png">
+                    <h3>Snake(Jogo da Cobrinha)</h3>
+                    <button onclick="Action('Cobra')" class="Trabalho_Infor">Saiba Mais</button>
+                    <dialog  class="InforProjeto" id="Cobra">
+                        <button onclick="Back('Cobra')">X</button>
+                        <div>
+                            <p>
+                                Um projeto/jogo inspirado no famoso jogo Snake dos Nokias, agora desenvolvido como um site. Para se mover, utiliza as setas do teclado. O objetivo é evitar colidir com o próprio corpo ou com as paredes.
+                            </p>
+                            <a class="Linguagens">
+                                <li class="HTML">
+                                    <span class="icon"><i class="bi bi-filetype-html"></i></span>
+                                </li>
+                                <li class="CSS">
+                                    <span class="icon"><i class="bi bi-filetype-css"></i></span>
+                                </li>
+                                <li class="JS">
+                                    <span class="icon"><i class="bi bi-filetype-js"></i></span>
+                                </li>
+                            </a>
+                            <a href="https://brunotakeo.github.io/Snake-Games/">Ir Ao Site</a>
+                        </div>
+                    </dialog>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="Contato">
+            <h1>Entra Em Contato Comigo</h1>
+            <div class="infor_contato">
+                <input type="text" class="form-input" name="nome" id="nome" placeholder="Seu Nome">
+                <input type="text" class="form-input" name="telefone" id="telefone" placeholder="Seu Telefone">
+                <input type="email" class="form-input" name="email" id="email" placeholder="Seu Email">
+                <input type="text" class="form-input" name="assunto" id="assunto" placeholder="Assunto">
+            </div>
+            <input type="text" class="form-input" name="mensagem" id="mensagem" placeholder="Sua Mensagem">
+            <button id="Enviar">Enviar</button>
+            <ul class="Footer_Final">
+                <p id="Diretos">BrunoTakeo© 2024</p>
+                <a href="https://www.linkedin.com/in/bruno-takeo-a%C3%A7ano-0bbb41273/" id="Linkedin">
+                    <li>
+                        <span class="icon"><i class="bi bi-linkedin"></i></span>
+                        <span class="Desc">Linkedin</span>
+                    </li>
+                </a>
+                <a href="https://github.com/BrunoTakeo" id="Github">
+                    <li>
+                        <span class="icon"><i class="bi bi-github"></i></span>
+                        <span class="Desc">Github</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </footer>
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>

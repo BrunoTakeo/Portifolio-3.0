@@ -1,0 +1,297 @@
+#Habilidades{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+    padding-top: 75px;
+    margin-right: 5%;
+    padding-left: 20px;
+}
+#Habilidades h2{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+.ImgHabilidade{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.Habilidade{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 350px;
+    height: 225px;
+}
+.Habilidade span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    transition: background-color 0.3s ease;
+}
+.Habilidade p strong{
+    font-size: 25px;
+}
+.Habilidade span:hover{
+    background-color: rgb(150, 0, 0);
+}
+.InforHab,
+.InforProjeto {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    height: 450px;
+    border: none;
+    border-radius: 75px;
+    background: #9F9FED;
+}
+#Comunicacao{
+    background-image: url(/img/Pessoas\ Conversando.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#Estudos{
+    background-image: url(/img/PessoaEstudando.webp);
+    background-size: cover;
+    background-position: center;
+}
+#BeC{
+    background-image: url(/img/Calmaria.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#FrontEnd{
+    background-image: url(/img/FrontEnd_cod.webp);
+    background-size: cover;
+    background-position: center;
+}
+#BackEnd{
+    background-image: url(/img/BackEnd_cod.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#BancoDados{
+    background-image: url(/img/Banco\ De\ Dados_Code.png);
+    background-size: contain;
+    background-position: right;
+}
+.InforHab div{
+    line-height: 2.7rem;
+    width: 50%;
+    height: 100%;
+    background-color: #9F9FED;
+}
+.InforHab div p{
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 35px;
+    font-size: 30px;
+}
+.InforHab div li{
+    list-style-type: square;
+    margin: 15px;
+    padding: 15px;
+    font-size: 30px;
+}
+dialog > button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Trabalho img{
+    width: 325px;
+    height: 200px;
+    border-radius: 75px;
+}
+#Trabalhos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500%;
+    gap: 25px;
+    padding-top: 25px;
+}
+.Trabalho{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: #9F9FED;
+    border-radius: 35px;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.Trabalho_Infor{
+    position: relative;
+    padding: 5px 25px;
+    background: #736CED;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 400px;
+    cursor: pointer;
+    transition: transform .2px ease;
+    box-shadow: 0 1px 5px #000;
+}
+.Trabalho_Infor:active{
+    transform: scale(0.9);
+}
+.Trabalho_Infor::before,
+.Trabalho_Infor::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 70%;
+    transform: translateX(-50%);
+    width: 150%;
+    background-repeat: no-repeat;
+}
+.Trabalho_Infor.animate::before{
+    top: -70%;
+    background-image: radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle, transparent 20%,#736CED 20%,transparent 30%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle, transparent 10%,#736CED 15%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%);
+    background-size: 1rem 1rem, 2rem 2rem, 1.5rem 2rem,2rem 2rem,1.8rem 1.8rem, 1rem 1rem,1.5rem 1.5rem, 1.8rem 1.8rem;
+    background-position: 5% 90%, 10% 90%,10% 90%, 15% 90%, 25% 90%,25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    animation:topBubbles2 0.6s  ease-in-out forwards;
+}
+@keyframes topBubbles2 {
+    50%{
+        background-position: 0% 80%, 0% 20%,10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100%{
+        background-position: 0% 70%, 0% 10%,10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%,0% 0%,0% 0%, 0% 0%;
+    }
+}
+.Trabalho_Infor.animate::after{
+    bottom: -70%;
+    background-image: radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle, transparent 10%,#736CED 15%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%),
+    radial-gradient(circle,#736CED 20%,transparent 20%);
+    background-size: 1.5rem 1.5rem, 2rem 2rem, 1.8rem 1.8rem,2rem 2rem,1.5rem 1.5rem, 2rem 2rem, 1.8rem 1.8rem;
+    background-position: 10% 0%, 30% 10%,55% 0%, 70% 0%, 85% 0%,70% 0%, 70% 0%;
+    animation:bottomBubbles2 0.6s  ease-in-out forwards;
+}
+@keyframes bottomBubbles2 {
+    50%{
+        background-position: 0% 80%, 20% 80%,45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100%{
+        background-position: 0% 90%, 20% 90%,45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%,0% 0%,0% 0%, 0% 0%;
+    }
+}
+.InforProjeto{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 450px;
+    border: none;
+    border-radius: 75px;
+    background: #9F9FED;
+}
+.InforProjeto div{
+    line-height: 2.5rem;
+    width: 50%;
+    height: 100%;
+    background-color: #9F9FED;
+}
+.InforProjeto p{
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 35px;
+    font-size: 20px;
+}
+#SeloIndicacao{
+    background-image: url(/img/Selo\ de\ Entidade.png);
+    background-size: cover;
+    background-position: center;
+}
+#Pokedex{
+    background-image: url(/img/Pokedex.png);
+    background-size: cover;
+    background-position: center;
+}
+#Cobra{
+    background-image: url(/img/Jogo\ Snake.png);
+    background-size: cover;
+    background-position: center;
+}
+dialog div a{
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    padding: 0 23px;
+}
+dialog div a:active{
+    color: #736CED;
+}
+.Linguagens{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+    gap: 50px;
+}
+.Linguagens li{
+    width: 80px;
+    height: 80px;
+
+    box-shadow: 0 0.2px 10px #000000;
+
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    transition: .2s;
+}
+.Linguagens li:hover{
+    background-color: #F2DFD7;
+}
+.HTML{
+    background-color: #ff763c;
+}
+.CSS{
+    background-color: #6d8aff;
+}
+.JS{
+    background-color: #f5ff3f;
+}
