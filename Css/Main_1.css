@@ -83,15 +83,17 @@ ul li:hover .Desc{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 360px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     background: #9F9FED;
     border-radius: 35px;
     gap: 20px;
     text-align: center;
     font-size: 1.2rem;
 }
-
+.Emprego p{
+    width: 360px;
+}
 #FarmaciaInfor{
     position: relative;
     padding: 5px 20px;

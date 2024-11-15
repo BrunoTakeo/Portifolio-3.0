@@ -35,11 +35,20 @@
     background: #D9D9D9;
     transition: background-color 0.3s ease;
 }
+.Habilidade p{
+    padding: 20px;
+}
 .Habilidade p strong{
     font-size: 25px;
 }
 .Habilidade span:hover{
     background-color: rgb(150, 0, 0);
+}
+#Soft{
+    padding-right: 20px;
+}
+#Hard{
+    padding-left: 20px;
 }
 .InforHab,
 .InforProjeto {
