@@ -1,13 +1,9 @@
 #Pefil{
+    display: block;
     border-radius: 75%;
     height: 25vw;
     width: 25vw;
     position: relative;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 5vw;
 }
 #Home{
     display: flex;
@@ -16,17 +12,22 @@ main{
     position: relative;
     margin: 10vw;
 }
-#ImgBack{
-    position: absolute;
-    opacity: 0.25;
-    height: 500px;
-    right: 45%;
-}
 .Texto{
     text-align: start;
     font-size: 2vw;
     margin-left: 5%;
     margin-right: 5%;
+}
+.Texto::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/img/Duas\ Casas\ Japonesas.png);
+    background-size: 520px;
+    background-repeat: no-repeat;
+    background-position:left;
+    z-index: -5;
+    opacity: 0.3;
 }
 .icon{
     color: #000;
@@ -209,4 +210,38 @@ dialog > button{
 }
 dialog > button:active{
     color: #000;
+}
+@media screen and (max-width:1170px) {
+    #Pefil{
+        display: none;
+    }
+    #Home{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #ImgBack{
+        right: 0;
+        height:200%;
+    }
+    .Texto{
+    text-align: center;
+    }
+    a{
+        padding: 2rem;
+    }
+    ul li{
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+    }
+    .icon i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+    }
+    .Texto::before{
+        background-size: 400px;
+        background-position:center;
+    }
 }
