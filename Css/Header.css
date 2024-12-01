@@ -7,8 +7,8 @@
 }
 nav{
     position: relative;
-    width: 550px;
-    height: 50px;
+    width: 43vw;
+    height: 4vw;
     background: #F2F0D8;
     border-radius: 8px;
     display: flex;
@@ -29,7 +29,7 @@ nav span{
     position: absolute;
     top: 0;
     left: 0;
-    width: 95px;
+    width: 7vw;
     height: 100%;
     background: linear-gradient(45deg, #F2F0D8,#F24B4B);
     border-radius: 8px;
@@ -39,19 +39,19 @@ nav a:nth-child(1):hover~span{
     left: 0;
 }
 nav a:nth-child(2):hover~span{
-    left: 100px;
+    left: 7.5vw;
 }
 nav a:nth-child(3):hover~span{
-    left: 210px;
-    width: 110px;
+    left: 16vw;
+    width: 8.5vw;
 }
 nav a:nth-child(4):hover~span{
-    left: 335px;
-    width: 100px;
+    left: 26vw;
+    width: 8vw;
 }
 nav a:nth-child(5):hover~span{
-    left: 435px;
-    width: 115px;
+    left: 35vw;
+    width: 8vw;
 }
 #Icon{
     border-radius: 75%;

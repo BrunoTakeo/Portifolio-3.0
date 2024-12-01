@@ -23,7 +23,7 @@
     position: absolute;
     inset: 0;
     background-image: url(/img/Duas\ Casas\ Japonesas.png);
-    background-size: 520px;
+    background-size: 40vw;
     background-repeat: no-repeat;
     background-position:left;
     z-index: -5;
@@ -49,8 +49,8 @@ ul{
     gap: 5vw;
 }
 ul li{
-    width: 80px;
-    height: 80px;
+    width: 6vw;
+    height: 6vw;
 
     background-color: #9F9FED;
     box-shadow: 0 6px 20px #F2DFD7;
@@ -84,8 +84,8 @@ ul li:hover .Desc{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 420px;
-    height: 420px;
+    width: 32vw;
+    height: 32vw;
     background: #9F9FED;
     border-radius: 35px;
     gap: 20px;
@@ -179,8 +179,8 @@ dialog::backdrop{
     background: #9F9FED;
 }
 .Infor img{
-    width: 450px;
-    height: 400px;
+    width: 40vw;
+    height: 30vw;
     margin-top: 24px;
     margin-right: 24px;
     border-radius: 10px;
@@ -193,9 +193,9 @@ dialog::backdrop{
 }
 .Infor div p{
     text-align: left;
-    padding-left: 25px;
+    padding-left: 5vw;
     padding-top: 35px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 dialog > button{
     position: absolute;
@@ -244,4 +244,27 @@ dialog > button:active{
         background-size: 400px;
         background-position:center;
     }
+    .Emprego{
+        width: 200px;
+        height: 200px;
+    }
+    #Farmacia{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        opacity: 0.3;
+    }
+    .Emprego p{
+        width: 200px;
+        font-size: 15px;
+    }
+    .Infor div p{
+        width: 35vw;
+        font-size: 2vw;
+    }
+    .Infor div img{
+        width: 50vw;
+        height: 35vw;
+    }
+    
 }
